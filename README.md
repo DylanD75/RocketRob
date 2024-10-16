@@ -1,7 +1,7 @@
 # RocketRob
 
 ## Summary
-**RocketRob** is a Unity game that was released to the IOS App Store through Aphy Games. The game is a pixelated 2D platform-style that depicts a character named Rob attempting to reach as high as possible in the sky! He is equipped with a rocket launcher that rapidly propels him away from the fired rocket, which is his main form of gaining height. He needs to dodge heat-seeking spike bombs and massive falling meteors and grab power-ups to help his mission. The inspiration for the game came from the classics Doodle Jump, Flappy Bird, and Jetpack Joyride.
+**RocketRob** is a Unity game that was released to the IOS App Store through Aphy Games. The game is a pixelated 2D platform-style game that depicts a character named Rob attempting to reach as high as possible in the sky! He is equipped with a rocket launcher that rapidly propels him away from the fired rocket, which is his main form of gaining height. He needs to dodge heat-seeking spike bombs and massive falling meteors and grab power-ups to help his mission. The inspiration for the game came from the classics Doodle Jump, Flappy Bird, and Jetpack Joyride.
 
 <div style="text-align: center; gap: 20px;">
     <img src="RocketRob_Phone.png" width="300"/>
@@ -11,7 +11,7 @@
 
 ## Details
 
-This project utilized Unity's 2D game design features to create the mobile game. All of the in-game assets, such as the character model, enemies, rockets, etc., were created by myself through pixel painting software or were modified from other sources. I utilizied Unity's physics engine to handle the core interactions in the game. For instance, if there was a collision between the player and a meteor, a force vector would be applied in the opposite direction to the impact such that both objects would react realistically. Below is the example of how I measured the magnitude of the drag from the user to calculate the force and direction of where the player should move:
+This project utilized Unity's 2D game design features to create the mobile game. All of the in-game assets, such as the character model, enemies, rockets, etc., were created by myself through pixel painting software or were modified from other sources. I utilized Unity's physics engine to handle the core interactions in the game. For instance, if there was a collision between the player and a meteor, a force vector would be applied in the opposite direction to the impact such that both objects would react realistically. Below is the example of how I measured the magnitude of the drag from the user to calculate the force and direction of where the player should move:
 
 ```bash
 newCenter = cam.ScreenToWorldPoint(new Vector2(0, 0));
