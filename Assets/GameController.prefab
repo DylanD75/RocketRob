@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1205798299671934320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205798299671934327}
+  m_Layer: 0
+  m_Name: Dots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205798299671934327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205798299671934320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1205798300629755078}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1205798300629755072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205798300629755078}
+  - component: {fileID: 1205798300629755079}
+  - component: {fileID: 1205798300629755076}
+  - component: {fileID: 1205798300629755077}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205798300629755078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205798300629755072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1205798299671934327}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1205798300629755079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205798300629755072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e75a665370926f4cbe6433819fed26e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1205798300629755076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205798300629755072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b348e0712086de46ba88c6459e8f752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  sounds:
+  - name: Rocket Explosion1
+    clip: {fileID: 8300000, guid: b0a243999043e2a4da9aecae9c0b29a0, type: 3}
+    volume: 0.9
+    pitch: 1
+    source: {fileID: 0}
+  - name: Rocket Trail
+    clip: {fileID: 8300000, guid: f73dd578d825257489806f72bfcc4a6e, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    source: {fileID: 0}
+  - name: Rocket Fire1
+    clip: {fileID: 8300000, guid: 95432cc3fc0de2946a1f388854c4c156, type: 3}
+    volume: 0.5
+    pitch: 0.8
+    source: {fileID: 0}
+  - name: Rocket Fire2
+    clip: {fileID: 8300000, guid: 223d5aff4095bba49aa42a5de6265cd9, type: 3}
+    volume: 0.5
+    pitch: 0.8
+    source: {fileID: 0}
+  - name: Rocket Fire3
+    clip: {fileID: 8300000, guid: a3e255fd4fd267a479da52c8dab8a570, type: 3}
+    volume: 0.5
+    pitch: 0.8
+    source: {fileID: 0}
+  - name: 5 Points
+    clip: {fileID: 8300000, guid: 10f00668ef3b6234f8ad6e16fff06743, type: 3}
+    volume: 0.8
+    pitch: 1
+    source: {fileID: 0}
+  - name: Rocket Explosion (Boundary)
+    clip: {fileID: 8300000, guid: 7adc86a159c80c34e903dfa3bda94b04, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Rocket Explosion2
+    clip: {fileID: 8300000, guid: 7adc86a159c80c34e903dfa3bda94b04, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Rocket Explosion3
+    clip: {fileID: 8300000, guid: b6fced6503795164c9eacdc17a55cf15, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Song
+    clip: {fileID: 8300000, guid: dc752f3dad55013489421927ee39b503, type: 3}
+    volume: 0.1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Death Sound
+    clip: {fileID: 8300000, guid: 65ba97ac5e0d4f349b4fdd31b7f40d74, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Cash
+    clip: {fileID: 8300000, guid: 1d1adfbdda038854a8a1f19e112c0e2d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  volume: {fileID: 0}
+  spaceGradient: {fileID: 7111526396218029773, guid: 498ed7dabf21f4845a73914dc225213c, type: 3}
+  ball: {fileID: 0}
+  rocketLauncher: {fileID: 0}
+  trajectory: {fileID: 1205798300629755077}
+  pushForce: 3.75
+  slider: {fileID: 0}
+  fill: {fileID: 0}
+  border: {fileID: 0}
+  timer: {fileID: 0}
+  altitudeText: {fileID: 0}
+  scoreText: {fileID: 0}
+  title: {fileID: 0}
+  byAphy: {fileID: 0}
+  pointer: {fileID: 0}
+  dottedArrow: {fileID: 0}
+  store: {fileID: 0}
+  settings: {fileID: 0}
+  about: {fileID: 0}
+  storeButton: {fileID: 0}
+  settingsButton: {fileID: 0}
+  aboutButton: {fileID: 0}
+  lowerBoundary: {fileID: 0}
+  tapToStart: {fileID: 0}
+  tapToStartText: {fileID: 0}
+  lr: {fileID: 0}
+--- !u!114 &1205798300629755077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205798300629755072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cce52453ea13544885046edceaad9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsNumber: 30
+  dotsParent: {fileID: 1205798299671934320}
+  dotPrefab: {fileID: 1342848550296913939, guid: 40e029e33d150cf479cab64a76e3c106, type: 3}
+  dotSpacing: 0.03
+  dotMinScale: 0.275
+  dotMaxScale: 0.65
