@@ -5,6 +5,7 @@
 
 <div style="text-align: center; gap: 20px;">
     <img src="RocketRob_Phone.png" width="300"/>
+    <img src="empty.png" width="100"/>
     <img src="RocketRob_pic2.png" width="300"/>
 </div>
 
